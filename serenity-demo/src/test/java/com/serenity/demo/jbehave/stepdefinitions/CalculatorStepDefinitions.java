@@ -12,17 +12,17 @@ public class CalculatorStepDefinitions {
 	
 	@Steps CalculatorSteps calculatorSteps;
 	
-	@Given("Jason has calculator")
+	@Given("Mason has calculator")
 	public void createCalculator(){
 		calculatorSteps.initializeCalculator();
 	}
 	
-	@When("Jason add two numbers $firstNumber and $secondNumber")
+	@When("Mason add two numbers $firstNumber and $secondNumber")
 	public void addTwoNumbers(int firstNumber, int secondNumber){
 		calculatorSteps.addTwoNumbers(firstNumber, secondNumber);
 	}
 	
-	@When("Jason perform subtraction $minuend minus $subtrahend")
+	@When("Mason perform subtraction $minuend minus $subtrahend")
 	public void doSubtraction(int minuend, int subtrahend){
 		calculatorSteps.subtractTwoNumbers(minuend, subtrahend);
 	}

@@ -18,8 +18,8 @@ Feature: Bank account transaction
   	| Andy-DRF54353 |	Andy	|	1000							| 1000						|
   	| Jiel-PKT6LE4K |	Jiel	|	2000							| 2000						|
   	| Rigs-2JKH234S |	Rigs	|	500								| 500							|
-    When Niel-PKT6LE4K deposits 600
-    And Rory-DRF54353 withdraws 200
+    When Jiel-PKT6LE4K deposits 600
+    And Andy-DRF54353 withdraws 200
     Then Accounts current balance should be
   	|	accountNumber	|	currentBalance		|
   	|	Andy-DRF54353	|	800								|
